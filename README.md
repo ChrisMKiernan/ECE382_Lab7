@@ -17,3 +17,8 @@ I started my code from the shell provided by Dr Coulston. In the shell code, the
 Polling is inefficient, and takes time to complete. If I were to use a similar approach on my robot for Lab 8, my robot could run into a wall before a polling loop is complete. However, when we look at the clock speed and the relatively small size (10 bit) of the digital value, we can see that polling the sensor takes a matter of milliseconds to complete, and is not entirely an issue.
 
 When my robot senses a wall, the correspoding light(s) turn on. However, the light(s) do not turn off until all three sensor values are below the threshold. This means that I could cause the center sensor to detect a close object, then cause the right sensor to detect, then remove the center object, and both LEDs would still be on. However, this is a cause of using 2 outputs for 3 sensors, and should not affect Lab 8.
+
+### Notes
+
+Documentation: None
+For more information on usage of IR sensors, see Lab 8
